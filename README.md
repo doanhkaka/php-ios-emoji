@@ -120,5 +120,5 @@ ios_emoji($text);
 
 ## Reference
 
-![Emoji Alias](https://github.com/euclid1990/php-ios-emoji/blob/master/data/ecode_to_alias.php)
+[Emoji Alias](https://github.com/euclid1990/php-ios-emoji/blob/master/data/ecode_to_alias.php)
 
