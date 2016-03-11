@@ -70,7 +70,7 @@ for Laravel 5.1+
 
 #### Public Assets
 
-Run following command: Move all emotion icon images and style.css file to `/public/ios-emoji`.
+Run following command: It will move all emotion icon images and style.css file to `/public/ios-emoji`.
 
 ```
 php artisan vendor:publish --tag=public --force
@@ -81,6 +81,10 @@ Add the style sheet we prepared for you.
 
 ```
 <link rel="stylesheet" href="{{ asset('/ios-emoji/css/style.css') }}">
+```
+Or use helper:
+```
+<link rel="stylesheet" href="{{ ios_emoji_css() }}">
 ```
 
 ## Usage
@@ -96,7 +100,7 @@ Add the style sheet we prepared for you.
 <html>
 <head>
     <title>PHP iOS Emoji</title>
-    <link rel="stylesheet" href="{{ asset('/ios-emoji/css/style.css') }}">
+    <link rel="stylesheet" href="{{ ios_emoji_css() }}">
 </head>
 <body>
     <p>'Parse the emotions: :smiley: :smile: :baby: :blush: :relaxed: :wink: :heart_eyes: :kissing_heart: in this string.'</p>
@@ -120,5 +124,5 @@ ios_emoji($text);
 
 ## Reference
 
-[Emoji Alias](https://github.com/euclid1990/php-ios-emoji/blob/master/data/ecode_to_alias.php)
+1. [Emoji Alias](https://github.com/euclid1990/php-ios-emoji/blob/master/data/ecode_to_alias.php)
 

@@ -1,5 +1,5 @@
 {
-    "name": "euclid1990/ios-emoji-php",
+    "name": "euclid1990/php-ios-emoji",
     "description": "An iOS Emoji Parser For Laravel 5",
     "license": "MIT",
     "authors": [
@@ -31,6 +31,6 @@
             "euclid1990\\PhpIosEmoji\\": "tests/"
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true
 }

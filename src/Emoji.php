@@ -89,6 +89,18 @@ class Emoji {
     }
 
     /**
+     * Get stylesheet asset path for the application.
+     *
+     * @param  string  $config
+     * @return string
+     */
+    public function css($config = 'default')
+    {
+        $assetPath = $this->config->get("emoji.{$config}.asset_path");
+        return $this->asset($assetPath . 'css/style.css');
+    }
+
+    /**
      * Init configuration
      *
      * @param  string  $config
