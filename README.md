@@ -1,4 +1,7 @@
 #  PHP iOS Emoji
+[![Latest Stable Version](https://poser.pugx.org/euclid1990/php-ios-emoji/version)](https://packagist.org/packages/euclid1990/php-ios-emoji)
+[![Total Downloads](https://poser.pugx.org/euclid1990/php-ios-emoji/downloads)](https://packagist.org/packages/euclid1990/php-ios-emoji)
+[![License](https://poser.pugx.org/euclid1990/php-ios-emoji/license)](https://packagist.org/packages/euclid1990/php-ios-emoji)
 
 An iOS emoji parser for Laravel 5.
 ![cry](https://raw.githubusercontent.com/euclid1990/php-ios-emoji/master/assets/img/1f602.png)
@@ -8,7 +11,7 @@ An iOS emoji parser for Laravel 5.
 [PHP](https://php.net) 5.5+ and [Laravel 5](https://laravel.com/docs/5.2) are required.
 
 The PHP iOs Emoji Service Provider can be installed via [Composer](http://getcomposer.org) by requiring the
-`euclid1990/php-ios-emoji` package and setting the `minimum-stability` to `dev` in your
+`euclid1990/php-ios-emoji` package in your
 project's `composer.json`.
 
 ```json
@@ -17,7 +20,7 @@ project's `composer.json`.
         "laravel/framework": "5.*",
         "euclid1990/php-ios-emoji": "~1.0"
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
 ```
 
@@ -79,11 +82,11 @@ php artisan vendor:publish --tag=public --force
 #### Add Stylesheet
 Add the style sheet we prepared for you.
 
-```
+```html
 <link rel="stylesheet" href="{{ asset('/ios-emoji/css/style.css') }}">
 ```
 Or use helper:
-```
+```html
 <link rel="stylesheet" href="{{ ios_emoji_css() }}">
 ```
 
@@ -91,11 +94,11 @@ Or use helper:
 
 #### 1. Example:
 
-```
+```php
 \Emoji::parse($text);
 ```
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -116,7 +119,7 @@ Result:
 
 #### 2. Use Helper:
 
-```
+```php
 $text = "Parse the emotions: :smiley: :smile: in this string.";
 // iOS Emoji Parser
 ios_emoji($text);
